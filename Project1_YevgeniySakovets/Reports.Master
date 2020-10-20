@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Reports.master.cs" Inherits="Project1_YevgeniySakovets.Reports1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Master Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="MasterBox">
+                <h1><%=DateTime.Now.ToString("dd MMM yyyy hh:mm") %></h1>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderMaster" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
